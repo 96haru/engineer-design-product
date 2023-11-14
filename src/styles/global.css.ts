@@ -3,7 +3,7 @@ import { Colors } from "./colors";
 import { mediaQueryScreen } from "./queries";
 
 globalStyle("body", {
-  fontFamily: "var(--font-roboto)",
+  fontFamily: "var(--font-noto_sans_jp)",
   backgroundColor: Colors.background.body.light,
   color: Colors.color.main_text.light,
 });

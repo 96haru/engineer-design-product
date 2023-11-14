@@ -3,13 +3,14 @@ import type { Metadata } from "next";
 import "@/styles/reset.css";
 import "@/styles/global.css";
 
-import { Roboto } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 
-const roboto = Roboto({
+const noto_sans_jp = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font-roboto",
+  variable: "--font-noto_sans_jp",
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.variable}>{children}</body>
+      <body className={noto_sans_jp.variable}>{children}</body>
     </html>
   );
 }
