@@ -3,44 +3,44 @@ import { Colors } from "./colors";
 import { mediaQueryScreen } from "./queries";
 
 globalStyle("body", {
-    fontFamily: "var(--font-roboto)",
-    backgroundColor: Colors.background.body.light,
-    color: Colors.color.main_text.light,
+  fontFamily: "var(--font-roboto)",
+  backgroundColor: Colors.background.body.light,
+  color: Colors.color.main_text.light,
 });
 
 globalStyle("p, button", {
-    fontSize: "small",
-    fontWeight: "normal",
+  fontSize: "small",
+  fontWeight: "normal",
 
-    "@media": {
-        [mediaQueryScreen("md")]: {
-            fontSize: "medium",
-        },
+  "@media": {
+    [mediaQueryScreen("md")]: {
+      fontSize: "medium",
     },
+  },
 });
 
 globalStyle("h2", {
-    fontSize: "large",
-    fontWeight: "bold",
+  fontSize: "large",
+  fontWeight: "bold",
 
-    "@media": {
-        [mediaQueryScreen("md")]: {
-            fontSize: "x-large",
-        },
+  "@media": {
+    [mediaQueryScreen("md")]: {
+      fontSize: "x-large",
     },
+  },
 });
 
 globalStyle("h1", {
-    fontSize: "x-large",
-    fontWeight: "bolder",
+  fontSize: "x-large",
+  fontWeight: "bolder",
 
-    "@media": {
-        [mediaQueryScreen("md")]: {
-            fontSize: "xx-large",
-        },
+  "@media": {
+    [mediaQueryScreen("md")]: {
+      fontSize: "xx-large",
     },
+  },
 });
 
 globalStyle("body button", {
-    cursor: "pointer",
+  cursor: "pointer",
 });
