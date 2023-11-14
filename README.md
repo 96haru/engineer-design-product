@@ -6,6 +6,7 @@ database: microcms
 frontend: nextjs  
 
 ## collaborator
+haru
 
 ## authour
 rhappy
