@@ -1,9 +1,12 @@
+import clsx from "clsx";
+import { hero_wrapper } from "./page.css";
+
 export default function Home() {
   return (
     <div>
-      <h1>h1 sampletext</h1>
-      <h2>h2 sampletext</h2>
-      <p>p sampletext</p>
+      <div className={clsx(hero_wrapper)}>
+        <h1>世界地図</h1>
+      </div>
     </div>
   );
 }
