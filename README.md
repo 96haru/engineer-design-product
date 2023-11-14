@@ -1,6 +1,11 @@
 # Engineer Design Product
+エンジニアリングデザイン入門で使うweb app  
 
-database: microcms
-frontend: nextjs
+## 仕様
+database: microcms  
+frontend: nextjs  
 
-author: rhappy
+## collaborator
+
+## authour
+rhappy
