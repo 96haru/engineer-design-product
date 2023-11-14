@@ -5,5 +5,5 @@ export default function Home() {
       <h2>h2 sampletext</h2>
       <p>p sampletext</p>
     </div>
-  )
+  );
 }
