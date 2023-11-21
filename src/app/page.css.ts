@@ -1,4 +1,3 @@
-import { Colors } from "@/styles/colors";
 import { mediaQueryScreen } from "@/styles/queries";
 import { style } from "@vanilla-extract/css";
 
@@ -7,21 +6,38 @@ export const hero_wrapper = style({
   minHeight: "720px",
   width: "100%",
   display: "flex",
-  justifyContent: "center",
+  justifyContent: "flex-start",
   alignItems: "center",
-  position: "relative",
-  background: Colors.background.hero.light,
 });
 
-export const hero_content = style({});
+export const hero_content = style({
+  width: "100%",
+});
 
 export const hero_title = style({
   fontSize: "3rem",
-  fontFamily: "var(--font-space_mono)",
+  fontFamily: "var(--font-josefin_sans)",
+
+  display: "flex",
+  alignItems: "center",
 
   "@media": {
     [mediaQueryScreen("md")]: {
-      fontSize: "5rem",
+      fontSize: "4rem",
+    },
+  },
+});
+
+export const sub_hero_title = style({
+  fontFamily: "var(--font-josefin_sans)",
+});
+
+export const icon_hero_title = style({
+  fontSize: "1.5rem",
+
+  "@media": {
+    [mediaQueryScreen("md")]: {
+      fontSize: "2rem",
     },
   },
 });
@@ -29,6 +45,6 @@ export const hero_title = style({
 export const hero_wave = style({
   width: "100%",
   position: "absolute",
-  bottom: "0px",
+  bottom: "-1px",
   left: "0px",
 });

@@ -21,9 +21,14 @@ export const paddingSpaceSm = style({
   },
 });
 
-export const borderRadius = style({
-    borderRadius: "0.4rem",
-    overflow: "hidden"
+export const borderRadiusSm = style({
+  borderRadius: "0.4rem",
+  overflow: "hidden",
+});
+
+export const borderRadiusMd = style({
+  borderRadius: "0.6rem",
+  overflow: "hidden",
 })
 
 export const container = style({
@@ -32,7 +37,7 @@ export const container = style({
 
   "@media": {
     [mediaQueryScreen("md")]: {
-      maxWidth: "560px",
+      maxWidth: "720px",
     },
   },
 });
