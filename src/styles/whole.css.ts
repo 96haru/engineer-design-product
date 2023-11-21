@@ -41,3 +41,23 @@ export const container = style({
     },
   },
 });
+
+export const icon_hero_title = style({
+  fontSize: "1.5rem",
+
+  "@media": {
+    [mediaQueryScreen("md")]: {
+      fontSize: "2rem",
+    },
+  },
+});
+
+export const header_icon_hero_title = style({
+  fontSize: "0.3rem",
+
+  "@media": {
+    [mediaQueryScreen("md")]: {
+      fontSize: "0.5rem",
+    },
+  },
+});

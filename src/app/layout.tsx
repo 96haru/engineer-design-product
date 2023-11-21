@@ -10,6 +10,7 @@ import {
   Josefin_Sans,
 } from "next/font/google";
 import clsx from "clsx";
+import { Header } from "@/components/Header/Header";
 export default function RootLayout({
   children,
 }: {
@@ -25,6 +26,7 @@ export default function RootLayout({
           josefin_sans.variable
         )}
       >
+        <Header />
         {children}
       </body>
     </html>

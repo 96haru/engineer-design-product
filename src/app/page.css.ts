@@ -32,15 +32,7 @@ export const sub_hero_title = style({
   fontFamily: "var(--font-josefin_sans)",
 });
 
-export const icon_hero_title = style({
-  fontSize: "1.5rem",
 
-  "@media": {
-    [mediaQueryScreen("md")]: {
-      fontSize: "2rem",
-    },
-  },
-});
 
 export const hero_wave = style({
   width: "100%",
