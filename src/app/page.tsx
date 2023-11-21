@@ -15,7 +15,7 @@ export default function Home() {
           <div className={clsx(s.hero_content)}>
             <h1 className={clsx(s.hero_title)}>
               <span>
-                <PublicIcon className={clsx(s.icon_hero_title)} />
+                <PublicIcon className={clsx(w.icon_hero_title)} />
               </span>
               world map
             </h1>
