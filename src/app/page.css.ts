@@ -2,7 +2,7 @@ import { mediaQueryScreen } from "@/styles/queries";
 import { style } from "@vanilla-extract/css";
 
 export const hero_wrapper = style({
-  height: "80dvh",
+  height: "70dvh",
   minHeight: "720px",
   width: "100%",
   display: "flex",

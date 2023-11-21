@@ -11,6 +11,7 @@ import {
 } from "next/font/google";
 import clsx from "clsx";
 import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
 export default function RootLayout({
   children,
 }: {
@@ -28,6 +29,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
