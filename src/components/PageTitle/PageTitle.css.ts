@@ -5,10 +5,10 @@ export const Pagetitle_wrappper = style({
   height: "20dvh",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center"
+  alignItems: "center",
 });
 
 export const PageTitle_title = style({
-    fontFamily: "var(--font-archivo_black)",
-    textDecoration: "underline"
-})
+  fontFamily: "var(--font-archivo_black)",
+  textDecoration: "underline",
+});
