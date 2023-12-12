@@ -6,6 +6,16 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.microcms-assets.io",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 module.exports = withVanillaExtract(nextConfig);

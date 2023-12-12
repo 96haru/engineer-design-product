@@ -10,5 +10,5 @@ export const Footer_wrapper = style({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  textAlign: "center"
+  textAlign: "center",
 });

@@ -37,7 +37,7 @@ export const container = style({
 
   "@media": {
     [mediaQueryScreen("md")]: {
-      maxWidth: "720px",
+      maxWidth: "640px",
     },
   },
 });
