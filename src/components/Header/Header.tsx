@@ -11,9 +11,6 @@ export const Header = () => {
       <div>
         <Link href={"/"}>
           <p className={clsx(s.Header_title)}>
-            <span>
-              <PublicIcon className={clsx(w.header_icon_hero_title)} />
-            </span>
             world map
           </p>
         </Link>
