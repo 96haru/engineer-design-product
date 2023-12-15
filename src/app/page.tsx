@@ -29,9 +29,7 @@ export default function Home() {
 
         {/* main */}
         <div>
-          <HomeSection title="ホームセクションコンポーネント">
-            <p>hello</p>
-          </HomeSection>
+          <p>QRコードを読み込んで見よう!</p>
         </div>
       </div>
     </div>

@@ -9,6 +9,6 @@ export const Pagetitle_wrappper = style({
 });
 
 export const PageTitle_title = style({
-  fontFamily: "var(--font-archivo_black)",
+  // fontFamily: "var(--font-archivo_black)",
   textDecoration: "underline",
 });

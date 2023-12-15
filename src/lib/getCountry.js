@@ -11,5 +11,6 @@ export const getCountry = async (name) => {
     return country;
   } catch (error) {
     console.log("get error");
+    return "error"
   }
 };

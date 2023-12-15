@@ -24,7 +24,7 @@ export default function RootLayout({
           noto_sans_jp.variable,
           space_mono.variable,
           archivo_black.variable,
-          josefin_sans.variable
+          josefin_sans.variable,
         )}
       >
         <Header />
@@ -37,7 +37,7 @@ export default function RootLayout({
 
 const noto_sans_jp = Noto_Sans_JP({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["400"],
   variable: "--font-noto_sans_jp",
 });
 
