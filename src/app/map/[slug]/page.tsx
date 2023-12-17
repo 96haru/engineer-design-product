@@ -13,9 +13,10 @@ import Image from "next/image";
 
 export default function Map() {
   const pathname = usePathname();
-  // パスを"/"で分割して、最後の要素を取得
   const parts = pathname.split("/");
   const slug = parts[parts.length - 1];
+
+  const [loading, setLoading] = useState<boolean>(true);
 
   const router = useRouter();
 
@@ -48,6 +49,8 @@ export default function Map() {
         // console.log(country); // 最新の状態をログに出力
       } catch (error) {
         console.error("error: ", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -57,18 +60,25 @@ export default function Map() {
   return (
     <div className={clsx(w.container)}>
       <div className={clsx(s.map_wrapper)}>
-        <div className={clsx(s.content_wrapper)}>
-          <Image
-            src={content.country_flag_image.url}
-            alt="flag"
-            height={560}
-            width={560}
-            sizes="100vw"
-            className={clsx(s.flag_image, w.borderRadiusMd)}
-          />
-          <h1>{content.country_name_jp}</h1>
-          {parse(content.country_body)}
-        </div>
+        {loading ? (
+          <div>
+            <h1 className={clsx(s.loading_text)}>読み込み中</h1>
+          </div>
+        ) : (
+          <div className={clsx(s.content_wrapper)}>
+            <Image
+              src={content.country_flag_image.url}
+              alt="flag"
+              height={560}
+              width={560}
+              sizes="100vw"
+              className={clsx(s.flag_image, w.borderRadiusMd)}
+              priority={false}
+            />
+            <h1 className={clsx(s.country_name)}>{content.country_name_jp}</h1>
+            {parse(content.country_body)}
+          </div>
+        )}
       </div>
     </div>
   );

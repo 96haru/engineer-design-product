@@ -1,9 +1,11 @@
+import { Colors } from "@/styles/colors";
 import { mediaQueryScreen } from "@/styles/queries";
-import { style } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 export const hero_wrapper = style({
   height: "70dvh",
   minHeight: "720px",
+  maxHeight: "1080px",
   width: "100%",
   display: "flex",
   justifyContent: "flex-start",
@@ -40,3 +42,11 @@ export const hero_wave = style({
   bottom: "-1px",
   left: "0px",
 });
+
+export const table = style({
+  width: "100%"
+})
+
+globalStyle(`${table} tr`, {
+  borderBottom: `solid 1px ${Colors.color.main_border.light}`,
+})

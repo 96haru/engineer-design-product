@@ -1,9 +1,6 @@
 import clsx from "clsx";
 import * as s from "./Header.css";
-import * as w from "@/styles/whole.css";
 import Link from "next/link";
-
-import PublicIcon from "@mui/icons-material/Public";
 
 export const Header = () => {
   return (

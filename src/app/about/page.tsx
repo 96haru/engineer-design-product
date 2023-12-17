@@ -1,7 +1,9 @@
 import clsx from "clsx";
 
 import * as w from "@/styles/whole.css";
+import * as s from "../page.css";
 import { PageTitle } from "@/components/PageTitle/PageTitle";
+import { TextLink } from "@/components/TextLink/TextLink";
 
 export default function About() {
   return (
@@ -45,11 +47,15 @@ export default function About() {
 
       <PageTitle title="このアプリケーションについて" />
       <div>
-        <table>
+        <table className={clsx(s.table)}>
           <tbody>
             <tr>
               <th>アプリケーション作成</th>
-              <td>橋爪黎</td>
+              <td>
+                <TextLink href="https://www.rhappy.dev" blank={true}>
+                  橋爪黎(rhappy)
+                </TextLink>
+              </td>
             </tr>
             <tr>
               <th>データ作成</th>
