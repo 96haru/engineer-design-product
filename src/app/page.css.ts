@@ -4,7 +4,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 
 export const hero_wrapper = style({
   height: "70dvh",
-  minHeight: "720px",
+  minHeight: "560px",
   maxHeight: "1008px",
   width: "100%",
   display: "flex",
