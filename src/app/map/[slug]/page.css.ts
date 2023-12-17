@@ -54,4 +54,13 @@ export const content_body = style({});
 globalStyle(`${content_body} h2`, {
   borderBottom: `solid 1px ${Colors.color.main_border.light}`,
   marginBottom: "1rem",
+  marginTop: "1rem",
 });
+
+export const table = style({
+  width: "100%",
+});
+
+globalStyle(`${table} tr`, {
+});
+
