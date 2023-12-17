@@ -5,7 +5,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 export const hero_wrapper = style({
   height: "70dvh",
   minHeight: "720px",
-  maxHeight: "1080px",
+  maxHeight: "1008px",
   width: "100%",
   display: "flex",
   justifyContent: "flex-start",
@@ -34,8 +34,6 @@ export const sub_hero_title = style({
   fontFamily: "var(--font-josefin_sans)",
 });
 
-
-
 export const hero_wave = style({
   width: "100%",
   position: "absolute",
@@ -43,10 +41,18 @@ export const hero_wave = style({
   left: "0px",
 });
 
-export const table = style({
-  width: "100%"
-})
 
-globalStyle(`${table} tr`, {
-  borderBottom: `solid 1px ${Colors.color.main_border.light}`,
-})
+export const title = style({
+  width: "100%",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "48px",
+  border: `solid 1px ${Colors.color.main_border.light}`,
+
+  "@media": {
+    [mediaQueryScreen("md")]: {
+      height: "72px",
+    },
+  },
+});

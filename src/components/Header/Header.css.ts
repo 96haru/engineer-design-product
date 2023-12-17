@@ -22,3 +22,8 @@ export const Header_wrapper = style({
 export const Header_title = style({
   fontFamily: "var(--font-josefin_sans)",
 });
+
+export const headerNav = style({
+  display: "flex",
+  gap: "0.8rem",
+});

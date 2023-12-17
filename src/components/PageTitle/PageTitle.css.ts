@@ -1,3 +1,4 @@
+import { Colors } from "@/styles/colors";
 import { style } from "@vanilla-extract/css";
 
 export const Pagetitle_wrappper = style({
@@ -10,5 +11,5 @@ export const Pagetitle_wrappper = style({
 
 export const PageTitle_title = style({
   // fontFamily: "var(--font-archivo_black)",
-  textDecoration: "underline",
+  borderBottom: `solid 4px ${Colors.color.LinkButton.light}`
 });

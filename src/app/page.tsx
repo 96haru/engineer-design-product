@@ -5,6 +5,7 @@ import * as w from "@/styles/whole.css";
 import PublicIcon from "@mui/icons-material/Public";
 import { HomeSection } from "@/components/HomeSection/HomeSection";
 import { TextLink } from "@/components/TextLink/TextLink";
+import { LinkButton } from "@/components/LinkButton/LinkButton";
 
 export default function Home() {
   return (
@@ -24,13 +25,17 @@ export default function Home() {
               <span className={clsx(s.sub_hero_title)}>by </span>
               いのべーしょんえくすぷろーらーず
             </TextLink>
+            <LinkButton href="/usage" content="使い方を見る" />
           </div>
         </div>
 
         {/* main */}
-        <div>
+        {/* <div className={clsx(s.title, w.borderRadiusMd)}>
           <p>QRコードを読み込んで見よう!</p>
-        </div>
+        </div> */}
+        <HomeSection title="world-mapとは...?">
+          <p>world-mapについての説明/aboutページにも書いてあるけど、もっと簡潔に何かが欲しい</p>
+        </HomeSection>
       </div>
     </div>
   );

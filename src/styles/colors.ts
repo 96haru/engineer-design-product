@@ -16,11 +16,19 @@ export const Colors = {
       light: "#212121",
     },
     footer_text: {
-      light: "#ffffff"
+      light: "#ffffff",
     },
     main_border: {
       // neutral 400
       light: "#a1a1aa",
+    },
+    LinkButton: {
+      // indigo 200
+      light: "#c7d2fe",
+      gradient: {
+        start: "#c7d2fe",
+        end: "#e0e7ff",
+      },
     },
   },
 };

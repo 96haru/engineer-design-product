@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 import * as w from "@/styles/whole.css";
-import * as s from "../page.css";
+import * as s from "./page.css";
 import { PageTitle } from "@/components/PageTitle/PageTitle";
 import { TextLink } from "@/components/TextLink/TextLink";
 
@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className={clsx(w.container)}>
       <PageTitle title="いのべーしょんえくすぷろーらーず" />
-      <div>
+      <div className="">
         <h1>2年5組 F班</h1>
         <br />
         <h2>メンバー</h2>

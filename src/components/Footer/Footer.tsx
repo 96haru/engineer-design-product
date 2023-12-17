@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div className={clsx(s.Footer_wrapper)}>
       <p>copyright&copy;2023&nbsp;</p>
-      <TextLink href="https://rhappy.dev" blank={true}>
+      <TextLink href="https://www.rhappy.dev" blank={true}>
         rhappy
       </TextLink>
     </div>

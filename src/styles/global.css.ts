@@ -10,7 +10,6 @@ globalStyle("body", {
 
 globalStyle("p, button", {
   fontSize: "small",
-  fontWeight: "normal",
 
   "@media": {
     [mediaQueryScreen("md")]: {
@@ -21,7 +20,6 @@ globalStyle("p, button", {
 
 globalStyle("h2", {
   fontSize: "large",
-  fontWeight: "bold",
 
   "@media": {
     [mediaQueryScreen("md")]: {
@@ -32,7 +30,6 @@ globalStyle("h2", {
 
 globalStyle("h1", {
   fontSize: "x-large",
-  fontWeight: "bolder",
 
   "@media": {
     [mediaQueryScreen("md")]: {
