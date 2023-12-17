@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { TextLink } from "@/components/TextLink/TextLink";
 
-export const revalidate = 360;
+export const revalidate = 60;
 
 export default function Map() {
   const pathname = usePathname();
