@@ -65,18 +65,28 @@ export default function Map() {
             <h1 className={clsx(s.loading_text)}>読み込み中</h1>
           </div>
         ) : (
-          <div className={clsx(s.content_wrapper)}>
-            <Image
-              src={content.country_flag_image.url}
-              alt="flag"
-              height={560}
-              width={560}
-              sizes="100vw"
-              className={clsx(s.flag_image, w.borderRadiusMd)}
-              priority={false}
-            />
-            <h1 className={clsx(s.country_name)}>{content.country_name_jp}</h1>
-            {parse(content.country_body)}
+          <div className={clsx(s.content_wrapper, s.content_body)}>
+            <div>
+              <Image
+                src={content.country_flag_image.url}
+                alt="flag"
+                height={560}
+                width={560}
+                sizes="100vw"
+                className={clsx(s.flag_image, w.borderRadiusMd)}
+                priority={false}
+              />
+              <h1 className={clsx(s.country_name)}>
+                {content.country_name_jp}
+              </h1>
+            </div>
+            <div>
+              <h2>基本情報</h2>
+            </div>
+            <div>
+              <h2>説明</h2>
+              {parse(content.country_body)}
+            </div>
           </div>
         )}
       </div>
