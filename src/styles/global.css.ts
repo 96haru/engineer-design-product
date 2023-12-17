@@ -8,7 +8,7 @@ globalStyle("body", {
   color: Colors.color.main_text.light,
 });
 
-globalStyle("p, button", {
+globalStyle("p, button, td", {
   fontSize: "small",
 
   "@media": {
