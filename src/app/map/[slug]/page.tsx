@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 import * as w from "@/styles/whole.css";
 import * as s from "./page.css";
-import { getCountry } from "@/lib/getCountry";
+import { getCountryDetail } from "@/lib/getCountryDetail";
 import parse from "html-react-parser";
 
 import { useEffect, useState } from "react";
@@ -47,7 +47,7 @@ export default function Map() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const country = await getCountry(slug);
+        const country = await getCountryDetail(slug);
         if (country === "error") {
           router.push("/");
         } else {
@@ -114,7 +114,7 @@ export default function Map() {
                   </tr>
                 </tbody>
               </table>
-              <p>Wikipediaより引用</p>
+              <p className={s.from_wiki}>Wikipediaより引用</p>
             </div>
             <div>
               <h2>説明</h2>

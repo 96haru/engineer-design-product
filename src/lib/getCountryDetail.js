@@ -2,7 +2,7 @@
 
 import { client } from "@/lib/client";
 
-export const getCountry = async (name) => {
+export const getCountryDetail = async (name) => {
   try {
     const country = await client.get({
       endpoint: "map",

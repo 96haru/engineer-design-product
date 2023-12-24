@@ -10,7 +10,9 @@ export default function Usage() {
       <div className={clsx(s.usage_wrapper)}>
         <UsageSection title="1">
           <p>
-            sample text sample textsample textsample textsample textsample textsample textsample textsample textsample textsample textsample textsample text
+            sample text sample textsample textsample textsample textsample
+            textsample textsample textsample textsample textsample textsample
+            textsample text
           </p>
         </UsageSection>
       </div>

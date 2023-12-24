@@ -3,13 +3,12 @@ import clsx from "clsx";
 import * as w from "@/styles/whole.css";
 import * as s from "./page.css";
 import { PageTitle } from "@/components/PageTitle/PageTitle";
-import { TextLink } from "@/components/TextLink/TextLink";
 
 export default function About() {
   return (
     <div className={clsx(w.container)}>
       <PageTitle title="いのべーしょんえくすぷろーらーず" />
-      <div className="">
+      <div className={clsx(s.about_body)}>
         <h1>2年5組 F班</h1>
         <br />
         <h2>メンバー</h2>
@@ -43,26 +42,6 @@ export default function About() {
         <p>
           まず、二手に分かれる。その後片方のグループは3Dプリンターを用いて、実際に世界パズルを制作する。必要な技術として、パズルを作るためのモデリング、3dプリンターを扱う技術などを考えている。これは、専門的な知識が必要だと考えるため、メンターまたはアドバイザーの先生についてもらいたいと考えている。そして、もう片方のグループは、スマートフォンで情報を表示するための簡単なアプリケーションを作成する。それと同時に入出力できるデバイスも同時に作成する。アプリケーションなどを作成している間に、パズルの作成が完了すると考えられるため、終了次第、パズル作成版にはそれぞれの国についての情報収集の作業をしてもらうようにする。
         </p>
-      </div>
-
-      <PageTitle title="このアプリケーションについて" />
-      <div>
-        <table className={clsx(s.table)}>
-          <tbody>
-            <tr>
-              <th>アプリケーション作成</th>
-              <td>
-                <TextLink href="https://www.rhappy.dev" blank={true}>
-                  橋爪黎(rhappy)
-                </TextLink>
-              </td>
-            </tr>
-            <tr>
-              <th>データ作成</th>
-              <td>橋爪黎</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </div>
   );

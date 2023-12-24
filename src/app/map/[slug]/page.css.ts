@@ -18,10 +18,11 @@ export const content_wrapper = style({});
 export const flag_image = style({
   width: "60%",
   objectFit: "cover",
-  border: "solid 1px black",
+  // border: "solid 1px black",
   height: "auto",
-  margin: "0 auto",
+  margin: "3rem auto 0 auto",
   display: "block",
+  boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
 });
 
 export const country_name = style({
@@ -61,6 +62,8 @@ export const table = style({
   width: "100%",
 });
 
-globalStyle(`${table} tr`, {
-});
+globalStyle(`${table} tr`, {});
 
+export const from_wiki = style({
+  textAlign: "right",
+});
