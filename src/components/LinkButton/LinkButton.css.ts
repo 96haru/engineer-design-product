@@ -7,8 +7,9 @@ export const wrapper = style({
   margin: "1rem 0",
   padding: "0.5rem 1.2rem",
   borderRadius: "100vh",
-  background: `linear-gradient(120deg, ${Colors.color.LinkButton.gradient.start}, ${Colors.color.LinkButton.gradient.end})`,
+  background: `linear-gradient(120deg, ${Colors.color.LinkButton.gradient.start}, 60%, ${Colors.color.LinkButton.gradient.end})`,
   border: `solid 1px ${Colors.color.main_border.light}`,
+  // color: "#ffffff",
 
   "@media": {
     [mediaQueryScreen("md")]: {

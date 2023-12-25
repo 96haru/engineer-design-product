@@ -9,6 +9,8 @@ import clsx from "clsx";
 import { PageTitle } from "@/components/PageTitle/PageTitle";
 import { TextLink } from "@/components/TextLink/TextLink";
 
+export const revalidate = 60;
+
 export default function Collection() {
   const router = useRouter();
   const [loading, setLoading] = useState<boolean>(true);

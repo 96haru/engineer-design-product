@@ -32,7 +32,7 @@ export const borderRadiusMd = style({
 })
 
 export const container = style({
-  width: "95%",
+  width: "90%",
   margin: "0 auto",
 
   "@media": {

@@ -11,10 +11,6 @@ export default function About() {
       <div className={clsx(s.about_body)}>
         <h1>2年5組 F班</h1>
         <br />
-        <h2>メンバー</h2>
-        <ol>IE系：黒崎陽暉 奥原啓太 橋爪黎</ol>
-        <ol>MR系：百瀬千宙 割田流星</ol>
-        <br />
         <h2>チームの紹介</h2>
         <p>
           チーム名は、最近流行りのchatGPTに「名前を考えて」と尋ね、返ってきた名前をひらがなにしました。特に深い理由はないけれど、印象に残るようにしました。

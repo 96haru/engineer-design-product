@@ -33,12 +33,14 @@ export default function Home() {
         {/* <div className={clsx(s.title, w.borderRadiusMd)}>
           <p>QRコードを読み込んで見よう!</p>
         </div> */}
-        <HomeSection title="world-mapとは...?">
-          <p>
-            これから世界の国を学ぶ人が、楽しく詳しく理解できるように手助けをするものです。<br />
-            分からない国や良く知らない国をスマホなどに読み込ませることで、生活や文化などを簡単に知ることができます！
-          </p>
-        </HomeSection>
+        <section>
+          <HomeSection title="world-mapとは...?">
+            <p>
+              これから世界の国を学ぶ人が、楽しく詳しく理解できるように手助けをするものです。
+              分からない国や良く知らない国をスマホなどに読み込ませることで、生活や文化などを簡単に知ることができます！
+            </p>
+          </HomeSection>
+        </section>
       </div>
     </div>
   );

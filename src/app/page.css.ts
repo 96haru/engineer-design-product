@@ -56,3 +56,8 @@ export const title = style({
     },
   },
 });
+
+
+export const main_wrapper = style({
+  background: ""
+})
