@@ -13,6 +13,8 @@ import clsx from "clsx";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 
+export const revalidate = 0 
+
 export default function RootLayout({
   children,
 }: {

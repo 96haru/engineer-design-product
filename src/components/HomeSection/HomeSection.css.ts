@@ -2,7 +2,7 @@ import { Colors } from "@/styles/colors";
 import { style } from "@vanilla-extract/css";
 
 export const HomeSection_wrapper = style({
-  backgroundColor: Colors.background.HomeSection.light,
+  // backgroundColor: Colors.background.HomeSection.light,
   border: `solid 1px ${Colors.color.sub_border.light}`,
   margin: "2rem 0px",
 });

@@ -7,6 +7,9 @@ export const getCountryDetail = async (name) => {
     const country = await client.get({
       endpoint: "map",
       contentId: name,
+      customRequestInit: {
+        next: { revalidate: 60 }
+      }
     });
     return country;
   } catch (error) {

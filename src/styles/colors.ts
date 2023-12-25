@@ -1,11 +1,11 @@
 export const Colors = {
   background: {
     body: {
-      light: "#f8fdfe",
+      light: "#ffffff",
     },
     HomeSection: {
       // neutral 100
-      light: "#f8fafc",
+      light: "#ffffff",
     },
     footer: {
       light: "#212121",
@@ -23,7 +23,7 @@ export const Colors = {
       light: "#cbe0f7",
     },
     sub_border: {
-      light: "#cbe0f7"
+      light: "#f1f5f9"
     },
     LinkButton: {
       // indigo 200
