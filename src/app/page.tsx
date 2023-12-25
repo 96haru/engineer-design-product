@@ -34,7 +34,10 @@ export default function Home() {
           <p>QRコードを読み込んで見よう!</p>
         </div> */}
         <HomeSection title="world-mapとは...?">
-          <p>world-mapについての説明/aboutページにも書いてあるけど、もっと簡潔に何かが欲しい</p>
+          <p>
+            これから世界の国を学ぶ人が、楽しく詳しく理解できるように手助けをするものです。<br />
+            分からない国や良く知らない国をスマホなどに読み込ませることで、生活や文化などを簡単に知ることができます！
+          </p>
         </HomeSection>
       </div>
     </div>

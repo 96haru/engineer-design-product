@@ -10,10 +10,27 @@ export default function Usage() {
       <div className={clsx(s.usage_wrapper)}>
         <UsageSection title="1">
           <p>
-            sample text sample textsample textsample textsample textsample
-            textsample textsample textsample textsample textsample textsample
-            textsample text
+            まずは自力でパズルを解いてみよう
           </p>
+        </UsageSection>
+        <UsageSection title="2">
+          <p>
+            どこの国か分からなかったら端末にパズルのQRコードを読みこもう<br />
+            （なるべくgooglemapを開かずに自力で解こう）
+          </p>
+        </UsageSection>
+        <UsageSection title="3">
+          <p>
+            もっと知りたい国があったら端末にパズルのQRコードを読み込もう
+          </p>
+        </UsageSection>
+        <UsageSection title="4">
+          <p>
+            パズルが完成したら「答え」のページで答え合わせをしよう
+          </p>
+        </UsageSection>
+        <UsageSection title="5">
+          <p>間違った国があったらパズルのQRコードを読み込みもっと詳しくなろう</p>
         </UsageSection>
       </div>
     </div>
