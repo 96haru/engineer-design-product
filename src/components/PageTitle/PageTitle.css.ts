@@ -2,8 +2,8 @@ import { Colors } from "@/styles/colors";
 import { style } from "@vanilla-extract/css";
 
 export const Pagetitle_wrappper = style({
-  minHeight: "320px",
-  height: "20dvh",
+  minHeight: "240px",
+  height: "15dvh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",

@@ -6,6 +6,7 @@ import PublicIcon from "@mui/icons-material/Public";
 import { HomeSection } from "@/components/HomeSection/HomeSection";
 import { TextLink } from "@/components/TextLink/TextLink";
 import { LinkButton } from "@/components/LinkButton/LinkButton";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,13 +34,14 @@ export default function Home() {
         {/* <div className={clsx(s.title, w.borderRadiusMd)}>
           <p>QRコードを読み込んで見よう!</p>
         </div> */}
-        <section>
+        <section className={clsx(s.main_wrapper)}>
           <HomeSection title="world-mapとは...?">
             <p>
               これから世界の国を学ぶ人が、楽しく詳しく理解できるように手助けをするものです。
               分からない国や良く知らない国をスマホなどに読み込ませることで、生活や文化などを簡単に知ることができます！
             </p>
           </HomeSection>
+          <LinkButton href="/collection" content="国の一覧を見る！" />
         </section>
       </div>
     </div>

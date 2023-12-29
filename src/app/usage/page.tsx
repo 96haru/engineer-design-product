@@ -3,10 +3,12 @@ import clsx from "clsx";
 import * as w from "@/styles/whole.css";
 import * as s from "./page.css";
 import { UsageSection } from "@/components/UsageSection/UsageSection";
+import { PageTitle } from "@/components/PageTitle/PageTitle";
 
 export default function Usage() {
   return (
     <div className={clsx(w.container)}>
+      <PageTitle title="使用方法" />
       <div className={clsx(s.usage_wrapper)}>
         <UsageSection title="1">
           <p>
