@@ -8,7 +8,7 @@ export const getCountryDetail = async (name) => {
       endpoint: "map",
       contentId: name,
       customRequestInit: {
-        next: { revalidate: 60 }
+        next: { revalidate: 120 }
       }
     });
     return country;

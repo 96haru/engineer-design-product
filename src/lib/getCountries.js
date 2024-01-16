@@ -11,7 +11,7 @@ export const getCountries = async (limit = 10, offset = 0) => {
     },
     customRequestInit: {
       next: {
-        revalidate: 60
+        revalidate: 120
       }
     }
   })
