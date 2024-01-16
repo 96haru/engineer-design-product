@@ -78,8 +78,8 @@ export default function Map() {
               <Image
                 src={content.country_flag_image.url}
                 alt="flag"
-                height={560}
-                width={560}
+                height={240}
+                width={320}
                 sizes="100vw"
                 className={clsx(s.flag_image, w.borderRadiusMd)}
                 priority={false}
