@@ -12,6 +12,7 @@ import {
 import clsx from "clsx";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const revalidate = 0 
 
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
