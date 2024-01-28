@@ -20,8 +20,8 @@ export async function CountriesList(p: Props) {
           <Image
             src={content.country_flag_image.url}
             alt="flag"
-            height={240}
-            width={320}
+            height={content.country_flag_image.height}
+            width={content.country_flag_image.width}
             sizes="100vw"
             className={clsx(s.flag_image, w.borderRadiusMd)}
             priority={false}

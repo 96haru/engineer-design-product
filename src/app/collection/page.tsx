@@ -4,6 +4,8 @@ import clsx from "clsx";
 import { PageTitle } from "@/components/PageTitle/PageTitle";
 import { TextLink } from "@/components/TextLink/TextLink";
 import { getCountries } from "@/lib/cms";
+import Image from "next/image";
+import Link from "next/link";
 
 export default async function Collection() {
   const contents = await getCountries();
@@ -14,11 +16,18 @@ export default async function Collection() {
       <div className={clsx(s.collection_wrapper)}>
         <div>
           {contents.map((e, index) => (
-            <div key={index}>
-              <TextLink href={`/map/${e.id}`} blank={false}>
-                {e.country_name_jp}
-              </TextLink>
-            </div>
+            <Link key={index} className={clsx(s.card_wrapper)} href={`/map/${e.id}`} target="_blank">
+              <Image
+                alt="flag"
+                src={e.country_flag_image?.url || ""}
+                height={e.country_flag_image?.height}
+                width={e.country_flag_image?.width}
+                className={clsx(s.card_image)}
+              />
+              <div className={clsx(s.card_content)}>
+                <p>{e.country_name_jp}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
