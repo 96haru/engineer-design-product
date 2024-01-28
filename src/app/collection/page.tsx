@@ -16,7 +16,7 @@ export default async function Collection() {
       <div className={clsx(s.collection_wrapper)}>
         <div>
           {contents.map((e, index) => (
-            <Link key={index} className={clsx(s.card_wrapper)} href={`/map/${e.id}`} target="_blank">
+            <Link key={index} className={clsx(s.card_wrapper)} href={`/map/${e.id}`}>
               <Image
                 alt="flag"
                 src={e.country_flag_image?.url || ""}
