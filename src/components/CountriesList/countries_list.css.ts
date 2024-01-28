@@ -39,16 +39,7 @@ export const country_name = style({
   },
 });
 
-export const loading_text = style({
-  textAlign: "center",
-  lineHeight: "10rem",
 
-  "@media": {
-    [mediaQueryScreen("md")]: {
-      lineHeight: "20rem",
-    },
-  },
-});
 
 export const content_body = style({});
 
