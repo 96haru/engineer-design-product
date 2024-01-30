@@ -6,7 +6,6 @@ import PublicIcon from "@mui/icons-material/Public";
 import { HomeSection } from "@/components/HomeSection/HomeSection";
 import { TextLink } from "@/components/TextLink/TextLink";
 import { LinkButton } from "@/components/LinkButton/LinkButton";
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {

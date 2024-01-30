@@ -14,11 +14,13 @@ export const hero_image = style({
   width: "100%",
   height: "100%",
   objectFit: "cover",
+  transform: "scale(-1,1)",
 
   maskImage: `linear-gradient(0deg, transparent, 40%, black)`,
 });
 
 export const hero_content = style({
+  width: "60%",
   position: "absolute",
   top: "50%",
   left: "50%",
