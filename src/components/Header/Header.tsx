@@ -18,7 +18,7 @@ export const Header = () => {
     <header className={clsx(s.Header_wrapper)}>
       <div>
         <Link href={"/"}>
-          <p className={clsx(s.Header_title)}>world map</p>
+          <p>world map</p>
         </Link>
       </div>
       <div className={clsx(s.headerNav)}>

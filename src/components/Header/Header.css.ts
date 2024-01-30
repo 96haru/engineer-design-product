@@ -11,16 +11,13 @@ export const Header_wrapper = style({
   width: "100%",
   height: "36px",
   backdropFilter: "blur(3px)",
+  zIndex: "calc(infinity)",
 
   "@media": {
     [mediaQueryScreen("md")]: {
       height: "56px",
     },
   },
-});
-
-export const Header_title = style({
-  fontFamily: "var(--font-josefin_sans)",
 });
 
 export const headerNav = style({

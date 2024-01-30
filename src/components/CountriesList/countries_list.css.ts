@@ -13,10 +13,11 @@ export const map_wrapper = style({
   },
 });
 
-export const content_wrapper = style({});
-
+export const content_wrapper = style({
+  position: "relative"
+});
 export const flag_image = style({
-  width: "60%",
+  width: "70%",
   objectFit: "cover",
   // border: "solid 1px black",
   height: "auto",
@@ -29,7 +30,6 @@ export const country_name = style({
   textAlign: "center",
   paddingBottom: "2rem",
   paddingTop: "0.6rem",
-  fontWeight: "bold",
 
   "@media": {
     [mediaQueryScreen("md")]: {
