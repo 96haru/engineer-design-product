@@ -20,11 +20,17 @@ export const hero_image = style({
 });
 
 export const hero_content = style({
-  width: "60%",
+  width: "90%",
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translateX(-50%) translateY(-50%)",
+
+  "@media" :{
+    [mediaQueryScreen("md")]: {
+      width: "70%"
+    }
+  }
 });
 
 export const hero_title = style({
